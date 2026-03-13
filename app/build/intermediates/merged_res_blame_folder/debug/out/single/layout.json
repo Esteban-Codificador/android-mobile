@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.avila.helloandroid.app-mergeDebugResources-47:/layout/fragment_user_list.xml",
+        "source": "com.avila.helloandroid.app-main-50:/layout/fragment_user_list.xml"
+    },
+    {
+        "merged": "com.avila.helloandroid.app-mergeDebugResources-47:/layout/activity_main.xml",
+        "source": "com.avila.helloandroid.app-main-50:/layout/activity_main.xml"
+    }
+]
