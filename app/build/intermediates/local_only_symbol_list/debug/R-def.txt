@@ -7,8 +7,15 @@ color purple_700
 color teal_200
 color teal_700
 color white
-id btnSaludar
-id textView
+id buttonAddUser
+id fragmentContainer
+id progressBar
+id scrollView
+id textViewTitle
+id textViewUserCount
+id textViewUserList
 layout activity_main
+layout fragment_user_list
 string app_name
+string hello_blank_fragment
 style Theme.HelloAndroid

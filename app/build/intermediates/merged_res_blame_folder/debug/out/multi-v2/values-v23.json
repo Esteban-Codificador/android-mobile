@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.avila.helloandroid.app-mergeDebugResources-29:/values-v23/values-v23.xml",
+            "outputFile": "com.avila.helloandroid.app-mergeDebugResources-46:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Esteban Avila\\.gradle\\caches\\8.10\\transforms\\2da495525ec9e677bd73845c7850bc25\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",

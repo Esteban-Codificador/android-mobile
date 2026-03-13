@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.avila.helloandroid.app-mergeDebugResources-29:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
+            "outputFile": "com.avila.helloandroid.app-mergeDebugResources-46:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Esteban Avila\\.gradle\\caches\\8.10\\transforms\\bdfb4158e5993d7e1024b8cd2fe0ba14\\transformed\\material-1.11.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
