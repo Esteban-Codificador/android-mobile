@@ -6,11 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.avila.helloandroid.R;
@@ -29,7 +29,7 @@ public final class FragmentUserListBinding implements ViewBinding {
   public final ProgressBar progressBar;
 
   @NonNull
-  public final ScrollView scrollView;
+  public final RecyclerView recyclerView;
 
   @NonNull
   public final TextView textViewTitle;
@@ -37,20 +37,15 @@ public final class FragmentUserListBinding implements ViewBinding {
   @NonNull
   public final TextView textViewUserCount;
 
-  @NonNull
-  public final TextView textViewUserList;
-
   private FragmentUserListBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonAddUser,
-      @NonNull ProgressBar progressBar, @NonNull ScrollView scrollView,
-      @NonNull TextView textViewTitle, @NonNull TextView textViewUserCount,
-      @NonNull TextView textViewUserList) {
+      @NonNull ProgressBar progressBar, @NonNull RecyclerView recyclerView,
+      @NonNull TextView textViewTitle, @NonNull TextView textViewUserCount) {
     this.rootView = rootView;
     this.buttonAddUser = buttonAddUser;
     this.progressBar = progressBar;
-    this.scrollView = scrollView;
+    this.recyclerView = recyclerView;
     this.textViewTitle = textViewTitle;
     this.textViewUserCount = textViewUserCount;
-    this.textViewUserList = textViewUserList;
   }
 
   @Override
@@ -92,9 +87,9 @@ public final class FragmentUserListBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.scrollView;
-      ScrollView scrollView = ViewBindings.findChildViewById(rootView, id);
-      if (scrollView == null) {
+      id = R.id.recyclerView;
+      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerView == null) {
         break missingId;
       }
 
@@ -110,14 +105,8 @@ public final class FragmentUserListBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textViewUserList;
-      TextView textViewUserList = ViewBindings.findChildViewById(rootView, id);
-      if (textViewUserList == null) {
-        break missingId;
-      }
-
       return new FragmentUserListBinding((ConstraintLayout) rootView, buttonAddUser, progressBar,
-          scrollView, textViewTitle, textViewUserCount, textViewUserList);
+          recyclerView, textViewTitle, textViewUserCount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
